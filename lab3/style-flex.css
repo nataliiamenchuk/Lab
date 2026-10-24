@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px 15px;
+    background-color: #fff;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Головний контейнер на Flexbox */
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #d7e8d5;
+    border: 2px solid #111;
+    margin: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caption-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-caption {
+    border-left: 2px solid #111;
+    border-bottom: 2px solid #111;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 20px;
+}
+
+.caption-1 { background-color: #fca311; color: #000; }
+.caption-2 { background-color: #d90429; color: #fff; }
+.caption-3 { background-color: #f7c6c7; color: #000; }
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .card-1, .card-2 {
+        flex: 50%;
+    }
+    .card-3 {
+        flex: 100%;
+    }
+}
+
+@media (min-width: 993px) {
+    .col {
+        flex: 33.3333%;
+    }
+}
+
+.nav-links {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.nav-btn {
+    display: block;
+    margin: 8px auto;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #777;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.nav-btn:hover {
+    background-color: #e0e0e0;
+}
