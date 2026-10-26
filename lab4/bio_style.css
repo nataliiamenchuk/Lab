@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.back-link {
+    font-style: italic;
+}
+
+.to-contents {
+    font-weight: bold;
+}
+
+.to-top {
+    text-transform: uppercase;
+}
+
+article {
+    font-size: 120%;
+}
+
+article h2 {
+    font-size: 120%;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav-buttons a:link, .nav-buttons a:visited {
+    text-decoration: none;
+    background-color: blue;
+    border: 3px solid black;
+    color: aliceblue;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.nav-buttons a:hover {
+    background-color: magenta;
+    color: darkslateblue;
+    border: 3px solid darkslateblue;
+}
+
+.nav-buttons a:active {
+    background-color: yellow;
+    color: brown;
+    border: 3px solid brown;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.section-box {
+    border: 1px solid black;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.info {
+    background-color: lavenderblush;
+    color: purple;
+}
+
+.child {
+    background-color: lavender;
+    color: blue;
+}
+
+.school {
+    background-color: darkgreen;
+    color: white;
+}
+
+.outside-school {
+    background-color: yellow;
+    color: brown;
+}
+
+.university {
+    background-color: lightgray;
+    color: black;
+}
+
+.bottom-line {
+    border: none;
+    border-top: 2px solid black;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
